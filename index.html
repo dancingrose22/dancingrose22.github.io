@@ -52,7 +52,6 @@
             display: grid;
             gap: 2em;
         }
-        /* Responsive two column grid */
         @media (min-width: 720px) {
             .two-col { grid-template-columns: 1fr 1fr; }
         }
@@ -99,7 +98,6 @@
         .projects h2, .achievements h2 {
             margin-bottom: 0.3em;
         }
-        /* Make sure grid and content aligns well on small screens */
         @media (max-width: 720px) {
             main, .section {
                 padding: 0.8em;
@@ -111,12 +109,42 @@
                 padding: 1em;
             }
         }
-        /* Add more separation between lists and headings */
         .section h2 {
             margin-bottom: 0.33em;
         }
         .section ul li {
             margin-bottom: 0.5em;
+        }
+        .product-links {
+            display: flex;
+            gap: 1.3em;
+            margin: 0.8em 0 1em 0;
+        }
+        .product-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary);
+            background: var(--accent-bg);
+            border-radius: 8px;
+            padding: 0.7em 1em 0.7em 1em;
+            box-shadow: 0 1px 8px #22988f16;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .product-link:hover, .product-link:focus {
+            box-shadow: 0 4px 16px #22988f28;
+            transform: translateY(-2px) scale(1.04);
+        }
+        .product-link svg {
+            height: 32px;
+            width: 32px;
+            margin-bottom: 0.5em;
+            display: block;
+        }
+        .product-link span {
+            font-weight: 600;
+            font-size: 1em;
         }
     </style>
 </head>
@@ -187,7 +215,36 @@
                 <h2>Experience</h2>
                 <ul>
                     <li>
-                        <strong>Simply Algo Fintech</strong><br>
+                        <strong>Simply Algo Fintech</strong>
+                        <div class="product-links">
+                            <a class="product-link" href="https://quantman.in/" target="_blank" title="Quantman">
+                                <!-- target icon for Quantman -->
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" fill="#22988f"/>
+                                    <circle cx="12" cy="12" r="4" fill="#fff"/>
+                                    <line x1="12" y1="2" x2="12" y2="8" stroke="#fff" stroke-width="2"/>
+                                </svg>
+                                <span>Quantman</span>
+                            </a>
+                            <a class="product-link" href="https://instaoptions.in/" target="_blank" title="InstaOptions">
+                                <!-- bolt icon for InstaOptions -->
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <polygon points="13 2, 2 14, 12 14, 11 22, 22 10, 13 10" fill="#22988f"/>
+                                </svg>
+                                <span>InstaOptions</span>
+                            </a>
+                            <a class="product-link" href="https://cryptobot.in/" target="_blank" title="Cryptobot">
+                                <!-- digital block icon for Cryptobot -->
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <rect x="2" y="2" width="8" height="8" fill="#22988f"/>
+                                    <rect x="14" y="2" width="8" height="8" fill="#22988f"/>
+                                    <rect x="8" y="8" width="8" height="8" fill="#44ccae"/>
+                                    <rect x="2" y="14" width="8" height="8" fill="#22988f"/>
+                                    <rect x="14" y="14" width="8" height="8" fill="#22988f"/>
+                                </svg>
+                                <span>Cryptobot</span>
+                            </a>
+                        </div>
                         Finance Analyst, Digital Marketing<br>
                         Supported clients, enhanced trading strategies, and contributed as a finance/trading blogger.
                     </li>
