@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sowmya P - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #22988f;
+            --secondary: #233142;
+            --accent-bg: #eaf8f7;
+            --section-bg: #fff;
+            --callout-bg: #f1fcfa;
+            --callout-border: #22988f;
+        }
+        body { 
+            font-family: 'Poppins', Arial, Helvetica, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: #f7fafc; 
+            color: var(--secondary);
+        }
+        header {
+            padding: 2em 0 1.2em 0;
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+        h1 { 
+            margin: 0.1em 0 0.3em 0;
+            font-size: 2.3em;
+            letter-spacing: 0.03em;
+            font-weight: 700;
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.28em;
+        }
+        main {
+            max-width: 940px;
+            margin: 2.2em auto;
+            background: var(--section-bg);
+            border-radius: 13px;
+            box-shadow: 0 4px 20px #d1edeb40;
+            padding: 2em 2.2em 1.2em 2.2em;
+        }
+        .grid {
+            display: grid;
+            gap: 2em;
+        }
+        /* Responsive two column grid */
+        @media (min-width: 720px) {
+            .two-col { grid-template-columns: 1fr 1fr; }
+        }
+        .section { margin-bottom: 1.9em; }
+        ul { padding-left: 17px; margin: 0.65em 0 0 0; }
+        .skills, .languages {
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 0.3em;
+        }
+        .skills span, .languages span {
+            background: var(--accent-bg);
+            color: var(--primary);
+            font-weight: 600;
+            padding: 6px 13px;
+            border-radius: 20px;
+            margin: 0;
+            font-size: 1em;
+        }
+        .contact {
+            font-size: 1.08em;
+            margin: 0.4em 0 0 0;
+        }
+        .contact a {
+            color: #e7f7fa;
+            text-decoration: underline;
+            margin: 0 0.5em;
+        }
+        .callout {
+            background: var(--callout-bg);
+            border-left: 6px solid var(--callout-border);
+            padding: 1.2em 1.5em 1.2em 1.7em;
+            margin: 1.7em 0 2.4em 0;
+            font-size: 1.1em;
+            border-radius: 9px;
+            color: var(--secondary);
+        }
+        .achievements, .projects {
+            background: var(--accent-bg);
+            border-radius: 9px;
+            padding: 1em 1.3em 1em 1.3em;
+        }
+        .projects h2, .achievements h2 {
+            margin-bottom: 0.3em;
+        }
+        /* Make sure grid and content aligns well on small screens */
+        @media (max-width: 720px) {
+            main, .section {
+                padding: 0.8em;
+            }
+            .grid.two-col {
+                grid-template-columns: 1fr;
+            }
+            .callout {
+                padding: 1em;
+            }
+        }
+        /* Add more separation between lists and headings */
+        .section h2 {
+            margin-bottom: 0.33em;
+        }
+        .section ul li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sowmya P</h1>
+        <div class="contact">
+            <span>9886451282 |</span>
+            <a href="mailto:sowmyap222000@gmail.com">sowmyap222000@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/sowmya--p" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+    <main>
+        <div class="callout">
+            <strong>Adaptable Leader & Creative Problem Solver:</strong>
+            <span> Dedicated to high-quality results, thriving in collaborative environments, and passionate about solving complex problems through innovation and teamwork.</span>
+        </div>
+
+        <div class="section">
+            <h2>Profile</h2>
+            <p>
+                Dedicated and adaptable professional with strong problem-solving skills. Committed to high-quality results, efficient team collaboration, quick learning, and continuous personal and organizational growth.
+            </p>
+        </div>
+        
+        <div class="section grid two-col">
+            <div>
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span>Project Management</span>
+                    <span>Public Relations</span>
+                    <span>Teamwork</span>
+                    <span>Leadership</span>
+                    <span>Effective Communication</span>
+                    <span>Critical Thinking</span>
+                </div>
+            </div>
+            <div>
+                <h2>Languages</h2>
+                <div class="languages">
+                    <span>English</span>
+                    <span>Kannada</span>
+                    <span>Telugu</span>
+                    <span>Tamil</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section grid two-col">
+            <div>
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>CMS B-SCHOOL</strong> (2022–2024)<br>
+                        MBA, 74.4%
+                    </li>
+                    <li>
+                        <strong>Jyoti Nivas College (Autonomous)</strong> (2018–2021)<br>
+                        Bachelor of Commerce, 60.38%
+                    </li>
+                    <li>
+                        <strong>Jyoti Nivas Pre-University College</strong> (2016–2018)<br>
+                        HSC, 77.5%
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Simply Algo Fintech</strong><br>
+                        Finance Analyst, Digital Marketing<br>
+                        Supported clients, enhanced trading strategies, and contributed as a finance/trading blogger.
+                    </li>
+                </ul>
+                <h2>Internship</h2>
+                <ul>
+                    <li>
+                        <strong>Mozo Hunt (E-commerce)</strong><br>
+                        Developed marketing strategies and prepared financial analysis reports.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section grid two-col">
+            <div class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <strong>Online Application for Migrant Workers (METIER)</strong><br>
+                        Platform to connect rural migrant workers with employment opportunities.
+                    </li>
+                    <li>
+                        <strong>Forensic Auditing for Corporates</strong><br>
+                        Applied forensic auditing for corporate transparency and improved accounting.
+                    </li>
+                </ul>
+            </div>
+            <div class="achievements">
+                <h2>Achievements</h2>
+                <ul>
+                    <li>Dalal Street Business Analytics - Parichay 2022</li>
+                    <li>Completed NISM Exam</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
