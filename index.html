@@ -124,6 +124,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;  /* horizontally center */
             text-decoration: none;
             color: var(--primary);
             background: var(--accent-bg);
@@ -145,6 +146,9 @@
         .product-link span {
             font-weight: 600;
             font-size: 1em;
+        }
+        .quantman-logo{
+            width: 30px;
         }
     </style>
 </head>
@@ -219,29 +223,26 @@
                         <div class="product-links">
                             <a class="product-link" href="https://quantman.in/" target="_blank" title="Quantman">
                                 <!-- target icon for Quantman -->
-                                <svg fill="currentColor" viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="10" fill="#22988f"/>
-                                    <circle cx="12" cy="12" r="4" fill="#fff"/>
-                                    <line x1="12" y1="2" x2="12" y2="8" stroke="#fff" stroke-width="2"/>
-                                </svg>
+                                 <picture>
+                                    <source srcset="/quantman-icon-512x512.png">
+                                    <img src="/quantman-icon-512x512.png" alt="Quantman Logo" class="quantman-logo">
+                                </picture>
                                 <span>Quantman</span>
                             </a>
                             <a class="product-link" href="https://instaoptions.in/" target="_blank" title="InstaOptions">
                                 <!-- bolt icon for InstaOptions -->
-                                <svg fill="currentColor" viewBox="0 0 24 24">
-                                    <polygon points="13 2, 2 14, 12 14, 11 22, 22 10, 13 10" fill="#22988f"/>
-                                </svg>
+                                <picture>
+                                    <source srcset="/instaoptions-icon-30X30.svg">
+                                    <img src="/instaoptions-icon-30X30.svg" alt="Quantman Logo" class="quantman-logo">
+                                </picture>
                                 <span>InstaOptions</span>
                             </a>
                             <a class="product-link" href="https://cryptobot.in/" target="_blank" title="Cryptobot">
                                 <!-- digital block icon for Cryptobot -->
-                                <svg fill="currentColor" viewBox="0 0 24 24">
-                                    <rect x="2" y="2" width="8" height="8" fill="#22988f"/>
-                                    <rect x="14" y="2" width="8" height="8" fill="#22988f"/>
-                                    <rect x="8" y="8" width="8" height="8" fill="#44ccae"/>
-                                    <rect x="2" y="14" width="8" height="8" fill="#22988f"/>
-                                    <rect x="14" y="14" width="8" height="8" fill="#22988f"/>
-                                </svg>
+                                <picture>
+                                    <source srcset="/cryptobot-logo.svg">
+                                    <img src="/cryptobot-logo.svg" alt="Quantman Logo" >
+                                </picture>
                                 <span>Cryptobot</span>
                             </a>
                         </div>
